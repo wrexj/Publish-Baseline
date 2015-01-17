@@ -1,0 +1,88 @@
+.tabs {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	margin: 1em 0 2em;
+	font-weight: 300;
+	margin-top: -100px;
+}
+
+/* Nav */
+.tabs nav {
+	text-align: left;
+	float: none;
+	margin-left: 2px;
+	max-width: 100%;
+	position: initial;
+	background-color: transparent;
+	border-right: none;
+	border-top: none;
+	height: inherit;
+	width: inherit;
+}
+
+.tabs nav ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: inline-block;
+}
+
+.tabs nav ul li {
+	background: #171717;
+	border-bottom: none;
+	margin: 0 0.25em;
+	display: block;
+	float: left;
+	position: relative;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+}
+
+.tabs nav li.tab-current {
+	border-bottom: none;
+	background: white;
+	z-index: 100;
+}
+
+.tabs nav a {
+	color: white;
+	display: block;
+	font-size: 1.45em;
+	line-height: 2.5;
+	padding: 0 1.25em;
+	white-space: nowrap;
+}
+
+.tabs nav li.tab-current a {
+	color: #cc6633;
+}
+
+/* Content */
+.content section {
+	font-size: 1.25em;
+	display: none;
+	max-width: 1230px;
+	margin: 0 auto;
+}
+
+.content section:before,
+.content section:after {
+	content: '';
+	display: table;
+}
+
+.content section:after {
+	clear: both;
+}
+
+/* Fallback example */
+.no-js .content section {
+	display: block;
+	padding-bottom: 2em;
+	border-bottom: 1px solid #47a3da;
+}
+
+.content section.content-current {
+	display: block;
+}
